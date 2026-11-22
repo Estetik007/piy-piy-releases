@@ -1,0 +1,25 @@
+name: Publish piy-piy 0.1.6
+
+on:
+  push:
+    branches: [release-publish-v0.1.6]
+    paths: ['release-files/**']
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify the release files
+        working-directory: release-files
+        run: sha256sum -c SHA256SUMS.txt
+      - name: Upload and publish the release
+        working-directory: release-files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload v0.1.6 channel.json SHA256SUMS.txt piy-piy-0.1.6-x64.zip piy-piy-setup-0.1.6-x64.exe --repo "$GITHUB_REPOSITORY"
+          gh release edit v0.1.6 --draft=false --latest --repo "$GITHUB_REPOSITORY"
