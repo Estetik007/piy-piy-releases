@@ -1,0 +1,15 @@
+{
+  "version": "0.1.6",
+  "date": "2026-11-22",
+  "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.6/piy-piy-0.1.6-x64.zip",
+  "sha256": "081c0e29bfbf74987389899a2fb71a69cf600bac16bd3196da2765c878fcced6",
+  "size": 41409324,
+  "installer": {
+    "sha256": "67f23896fc64b72b77cd56babff73167eae5694cde424fc5258e9eb9d5f89b85",
+    "size": 34546653
+  },
+  "news": [
+    "На заставке зомби идут лицом к базе и падают без разворота после попадания."
+  ],
+  "article": null
+}
