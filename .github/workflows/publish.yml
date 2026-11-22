@@ -1,0 +1,36 @@
+name: Publish piy-piy 0.1.10
+
+on:
+  push:
+    branches: [release-publish-v0.1.10]
+    paths: ['release-files/**']
+
+permissions:
+  contents: read
+
+jobs:
+  windows-icons:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify Windows shortcut and executable icons
+        shell: pwsh
+        run: ./.github/check-icons.ps1
+  publish:
+    needs: windows-icons
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify release files
+        working-directory: release-files
+        run: sha256sum -c SHA256SUMS.txt
+      - name: Upload files and publish
+        working-directory: release-files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh release upload v0.1.10 channel.json SHA256SUMS.txt piy-piy-0.1.10-x64.zip piy-piy-setup-0.1.10-x64.exe news-1.jpg --repo "$GITHUB_REPOSITORY"
+          gh release edit v0.1.10 --draft=false --latest --repo "$GITHUB_REPOSITORY"
