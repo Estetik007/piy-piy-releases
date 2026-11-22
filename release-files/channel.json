@@ -1,0 +1,47 @@
+{
+  "version": "0.1.17",
+  "date": "2026-11-22",
+  "game_version": "0.1.17",
+  "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.17/piy-piy-0.1.17-x64.zip",
+  "sha256": "9c72ce094305b7155be74da31b3dbe08b988a7b5c1c550f6fd756e961132880a",
+  "size": 41557694,
+  "game_files": {
+    "piy-piy.exe": {
+      "sha256": "fd632533f5f8dca93ad4e49ed96370ba291a0d112bed5de64c399db27a6b6ef8",
+      "size": 109641216,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.17/piy-piy.exe-0.1.17-x64.zip",
+        "sha256": "02110537ffbf44c89b3f7e997fe49cf9595f8986180590262ee3ea6c3b466285",
+        "size": 38196068
+      }
+    },
+    "piy-piy.pck": {
+      "sha256": "9ceca50833af40be2d1174e9e88a0aa75469fbec814c2e5d5356da71700a3e5a",
+      "size": 3432132,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.17/piy-piy.pck-0.1.17-x64.zip",
+        "sha256": "49e96dee6a0353f6fe6b0c8b1a1a302d03e2006c0c9035e1be5284251db669db",
+        "size": 3361648
+      }
+    }
+  },
+  "installer": {
+    "sha256": "8c23ad87e1823417bd4cc660e7e8b0d9fb6d946e56f531d27bf8f2e3679639fa",
+    "size": 7214633
+  },
+  "news": [],
+  "article": {
+    "title": "Пять метров между инженерами",
+    "lead": "На маршруте инженеры растягивают колонну до 5 метров между соседями. Такой интервал даёт не менее чем половине полного отряда остаться вне одного взрыва на прямой и на повороте под прямым углом.",
+    "cover": {
+      "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.17/news-1.png",
+      "caption": "Шесть инженеров с интервалом 5 метров по пути к руднику."
+    },
+    "sections": [
+      {
+        "heading": "Дистанция в пути",
+        "text": "Колонна растягивается по мере движения. С грузом инженеры идут обычным шагом и держат ту же дистанцию. У рудника и хранилища они собираются для погрузки и разгрузки."
+      }
+    ]
+  }
+}
