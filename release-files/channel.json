@@ -1,0 +1,33 @@
+{
+  "version": "0.1.7",
+  "date": "2026-11-22",
+  "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.7/piy-piy-0.1.7-x64.zip",
+  "sha256": "14d5a237733391c35a22a8cef140137988d749fabbca7631f44e35524a44bb1f",
+  "size": 41409324,
+  "installer": {
+    "sha256": "f99b04ecc337e8c9565cd590d78bf2abc6ab8dea0056ef5c823a053b643d91bd",
+    "size": 34550435
+  },
+  "news": [],
+  "article": {
+    "title": "Обложка и фотографии",
+    "lead": "Исправили отрисовку изображений на главном экране и в новостях лаунчера.",
+    "cover": {
+      "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.7/news-1.jpg",
+      "caption": "Укреплённая база на закате. Кадр из игры."
+    },
+    "fixed": [
+      "Обложка и кадры выпуска отрисовываются через обновлённый механизм Windows."
+    ],
+    "sections": [
+      {
+        "heading": "Фото на весь экран",
+        "text": "Нажми на снимок, чтобы открыть его на весь экран. Если в выпуске есть несколько кадров, между ними можно переключаться стрелками.",
+        "image": {
+          "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.7/news-2.png",
+          "caption": "Панель бункера в игре."
+        }
+      }
+    ]
+  }
+}
