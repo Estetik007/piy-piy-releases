@@ -1,0 +1,35 @@
+name: Publish piy-piy 0.1.7
+
+on:
+  push:
+    branches: [release-publish-v0.1.7]
+    paths: ['release-files/**']
+
+permissions:
+  contents: read
+
+jobs:
+  windows-images:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify the launcher paints its images on Windows
+        shell: pwsh
+        run: ./.github/check-launcher-images.ps1
+  publish:
+    needs: windows-images
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify the release files
+        working-directory: release-files
+        run: sha256sum -c SHA256SUMS.txt
+      - name: Upload and publish the release
+        working-directory: release-files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload v0.1.7 channel.json SHA256SUMS.txt piy-piy-0.1.7-x64.zip piy-piy-setup-0.1.7-x64.exe news-1.jpg news-2.png --repo "$GITHUB_REPOSITORY"
+          gh release edit v0.1.7 --draft=false --latest --repo "$GITHUB_REPOSITORY"
