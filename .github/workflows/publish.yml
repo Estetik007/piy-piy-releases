@@ -1,0 +1,36 @@
+name: Publish piy-piy 0.1.12
+
+on:
+  push:
+    branches: [release-publish-v0.1.12]
+    paths: ['release-files/**']
+
+permissions:
+  contents: read
+
+jobs:
+  test-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify offline installation and launcher-only upgrade
+        shell: pwsh
+        run: ./.github/check-installs.ps1
+  publish:
+    needs: test-windows
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify release files
+        working-directory: release-files
+        run: sha256sum -c SHA256SUMS.txt
+      - name: Upload files and publish
+        working-directory: release-files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh release upload v0.1.12 channel.json SHA256SUMS.txt piy-piy-setup-0.1.12-x64.exe piy-piy-full-0.1.12-x64.exe news-1.png --repo "$GITHUB_REPOSITORY"
+          gh release edit v0.1.12 --draft=false --latest --repo "$GITHUB_REPOSITORY"
