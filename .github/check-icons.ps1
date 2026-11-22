@@ -4,8 +4,63 @@ Add-Type -TypeDefinition @'
 using System;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.ComTypes;
+using System.Text;
 
 public static class Icons {
+    [ComImport, Guid("000214F9-0000-0000-C000-000000000046"), InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+    private interface IShellLinkW {
+        void GetPath([Out, MarshalAs(UnmanagedType.LPWStr)] StringBuilder path, int length, IntPtr data, uint flags);
+        void GetIDList(out IntPtr idList);
+        void SetIDList(IntPtr idList);
+        void GetDescription([Out, MarshalAs(UnmanagedType.LPWStr)] StringBuilder text, int length);
+        void SetDescription([MarshalAs(UnmanagedType.LPWStr)] string text);
+        void GetWorkingDirectory([Out, MarshalAs(UnmanagedType.LPWStr)] StringBuilder path, int length);
+        void SetWorkingDirectory([MarshalAs(UnmanagedType.LPWStr)] string path);
+        void GetArguments([Out, MarshalAs(UnmanagedType.LPWStr)] StringBuilder text, int length);
+        void SetArguments([MarshalAs(UnmanagedType.LPWStr)] string text);
+        void GetHotkey(out ushort key);
+        void SetHotkey(ushort key);
+        void GetShowCmd(out int command);
+        void SetShowCmd(int command);
+        void GetIconLocation([Out, MarshalAs(UnmanagedType.LPWStr)] StringBuilder path, int length, out int index);
+    }
+
+    public static string[] ShortcutLocation(string path) {
+        var linkClass = Type.GetTypeFromCLSID(new Guid("00021401-0000-0000-C000-000000000046"));
+        var link = Activator.CreateInstance(linkClass);
+        try {
+            ((IPersistFile)link).Load(path, 0);
+            var shellLink = (IShellLinkW)link;
+            var target = new StringBuilder(32768);
+            var arguments = new StringBuilder(32768);
+            var icon = new StringBuilder(32768);
+            int index;
+            shellLink.GetPath(target, target.Capacity, IntPtr.Zero, 4);
+            shellLink.GetArguments(arguments, arguments.Capacity);
+            shellLink.GetIconLocation(icon, icon.Capacity, out index);
+            return new[] { target.ToString(), arguments.ToString(), icon.ToString(), index.ToString() };
+        } finally {
+            Marshal.ReleaseComObject(link);
+        }
+    }
+
+    [DllImport("kernel32.dll", CharSet = CharSet.Unicode)]
+    private static extern IntPtr LoadLibraryEx(string file, IntPtr fileHandle, uint flags);
+
+    [DllImport("kernel32.dll")]
+    private static extern bool FreeLibrary(IntPtr module);
+
+    [DllImport("user32.dll", CharSet = CharSet.Unicode)]
+    private static extern IntPtr LoadIcon(IntPtr module, string name);
+
+    public static int[] GameWindowIcon(string file) {
+        IntPtr module = LoadLibraryEx(file, IntPtr.Zero, 2);
+        if (module == IntPtr.Zero) throw new InvalidOperationException("Could not load the game's resources");
+        try { return Pixels(LoadIcon(module, "GODOT_ICON")); }
+        finally { FreeLibrary(module); }
+    }
+
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
     public struct ShellInfo {
         public IntPtr Icon;
@@ -136,6 +191,7 @@ if ($setup.ExitCode -ne 0) { throw "0.1.10 setup failed: $($setup.ExitCode)" }
 $launcher = Join-Path $path 'piy-piy-launcher.exe'
 $game = Join-Path $path 'versions\0.1.10\piy-piy.exe'
 Assert-DrawnIcon ([Icons]::FileIcon($game, 0)) 'game executable'
+Assert-DrawnIcon ([Icons]::GameWindowIcon($game)) 'game window resource'
 $launcherPixels = [Icons]::FileIcon($launcher, 0)
 $gameShortcutPixels = [Icons]::FileIcon($launcher, 1)
 Assert-DrawnIcon $launcherPixels 'launcher executable'
@@ -144,7 +200,6 @@ if (($launcherPixels -join ',') -eq ($gameShortcutPixels -join ',')) {
     throw 'The game and launcher use the same artwork'
 }
 
-$shell = New-Object -ComObject WScript.Shell
 $folders = @(
     [Environment]::GetFolderPath('DesktopDirectory')
     [Environment]::GetFolderPath('Programs')
@@ -155,11 +210,12 @@ foreach ($folder in $folders) {
     for ($i = 0; $i -lt $labels.Count; $i++) {
         $linkPath = Join-Path $folder $labels[$i]
         if (-not (Test-Path $linkPath)) { throw "Shortcut missing: $linkPath" }
-        $link = $shell.CreateShortcut($linkPath)
-        $iconPath, $iconIndex = $link.IconLocation -split ',\s*', 2
-        if ($link.TargetPath -ne $launcher -or $link.Arguments -ne $arguments[$i] -or
+        $target, $argsText, $iconPath, $iconIndex = [Icons]::ShortcutLocation($linkPath)
+        $linkSize = (Get-Item $linkPath).Length
+        Write-Host "Read $linkSize bytes from $linkPath"
+        if ($target -ne $launcher -or $argsText -ne $arguments[$i] -or
             $iconPath -ne $launcher -or $iconIndex -ne [string]$i) {
-            throw "Invalid shortcut $linkPath ($($link.TargetPath); $($link.Arguments); $($link.IconLocation))"
+            throw "Invalid shortcut $linkPath ($target; $argsText; $iconPath,$iconIndex)"
         }
         Assert-DrawnIcon ([Icons]::Shortcut($linkPath)) $linkPath
     }
