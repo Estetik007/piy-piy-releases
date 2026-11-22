@@ -1,0 +1,47 @@
+{
+  "version": "0.1.16",
+  "date": "2026-11-22",
+  "game_version": "0.1.16",
+  "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.16/piy-piy-0.1.16-x64.zip",
+  "sha256": "a9fbfa1294c20e4f51fa9cb72d0fba51fe2a15d8d5aafbfe305da7fbfbca9547",
+  "size": 41557372,
+  "game_files": {
+    "piy-piy.exe": {
+      "sha256": "fd632533f5f8dca93ad4e49ed96370ba291a0d112bed5de64c399db27a6b6ef8",
+      "size": 109641216,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.16/piy-piy.exe-0.1.16-x64.zip",
+        "sha256": "a472caf85f259bcc0ca6611b750e7c08245a33a5263fea6e9c484a10d4236f37",
+        "size": 38196068
+      }
+    },
+    "piy-piy.pck": {
+      "sha256": "b7297c04bfaa01ba5293cfd21fa1148062c5fc5306707cc8961554fe325590b5",
+      "size": 3431828,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.16/piy-piy.pck-0.1.16-x64.zip",
+        "sha256": "e124e9f63f70699607ae3847200ae86b69395264129844e79053db0e4fa02bbf",
+        "size": 3361326
+      }
+    }
+  },
+  "installer": {
+    "sha256": "0817b20d50e8f82532d1fd9657587dcd2c30ea64718b8b462b62377e15be5fae",
+    "size": 6666943
+  },
+  "news": [],
+  "article": {
+    "title": "Инженеры бегут цепочкой",
+    "lead": "На пути к добытчику инженеры бегут друг за другом. На обратном пути с грузом они идут тем же строем обычным шагом.",
+    "cover": {
+      "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.16/news-1.png",
+      "caption": "Шесть инженеров бегут цепочкой к руднику."
+    },
+    "sections": [
+      {
+        "heading": "Строй на поворотах",
+        "text": "Каждый инженер повторяет путь впереди идущего и держит дистанцию. На повороте колонна огибает препятствие по тому же маршруту. У добытчика и хранилища отряд собирается для погрузки и разгрузки."
+      }
+    ]
+  }
+}
