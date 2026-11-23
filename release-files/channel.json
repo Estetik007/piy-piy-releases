@@ -1,0 +1,43 @@
+{
+  "version": "0.1.19",
+  "date": "2026-11-23",
+  "game_version": "0.1.18",
+  "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.18/piy-piy-0.1.18-x64.zip",
+  "sha256": "69d918ec6efb1d7f6dad569cffee56ff3bbe9e3d1000fbc86e7858aacda4e0b9",
+  "size": 41563276,
+  "game_files": {
+    "piy-piy.exe": {
+      "sha256": "fd632533f5f8dca93ad4e49ed96370ba291a0d112bed5de64c399db27a6b6ef8",
+      "size": 109641216,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.18/piy-piy.exe-0.1.18-x64.zip",
+        "sha256": "aead830178aad52ae58288d9a0a0daba82e146e617b56f33352d6b902abfad5d",
+        "size": 38196068
+      }
+    },
+    "piy-piy.pck": {
+      "sha256": "480554d9e7d242509b92479a90759973ad5186a15c442cff2e25b73d5db2247b",
+      "size": 3437588,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.18/piy-piy.pck-0.1.18-x64.zip",
+        "sha256": "695895485ea271ce45ab412e80d0d2f41aa98a5bcf6c7e60b927bf7988880c30",
+        "size": 3367230
+      }
+    }
+  },
+  "installer": {
+    "sha256": "16361869553e7b6627cff14c7478d59dd39f696f8d1df2e7552c33f45d064d59",
+    "size": 9216294
+  },
+  "news": [],
+  "article": {
+    "title": "Исправили название «Зомбипедия»",
+    "lead": "Название справочника исправили во вкладке и в новостях лаунчера.",
+    "sections": [
+      {
+        "heading": "Лаунчер 0.1.19",
+        "text": "Обновление исправляет подпись «Зомбипедия» во вкладке справочника и в тексте предыдущего выпуска. Установленная игра 0.1.18 используется дальше."
+      }
+    ]
+  }
+}
