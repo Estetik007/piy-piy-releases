@@ -1,0 +1,26 @@
+name: Publish piy-piy 0.1.22
+
+on:
+  push:
+    branches: [release-publish-v0.1.22]
+    paths: ['release-files/**']
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify release files
+        working-directory: release-files
+        run: sha256sum -c SHA256SUMS.txt
+      - name: Upload files and publish
+        working-directory: release-files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh release upload v0.1.22 channel.json SHA256SUMS.txt piy-piy-setup-0.1.22-x64.exe piy-piy-full-0.1.22-x64.exe piy-piy-0.1.22-x64.zip piy-piy.exe-0.1.22-x64.zip piy-piy.pck-0.1.22-x64.zip --repo "$GITHUB_REPOSITORY"
+          gh release edit v0.1.22 --draft=false --latest --repo "$GITHUB_REPOSITORY"
