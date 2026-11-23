@@ -1,0 +1,43 @@
+{
+  "version": "0.1.20",
+  "date": "2026-11-23",
+  "game_version": "0.1.18",
+  "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.18/piy-piy-0.1.18-x64.zip",
+  "sha256": "69d918ec6efb1d7f6dad569cffee56ff3bbe9e3d1000fbc86e7858aacda4e0b9",
+  "size": 41563276,
+  "game_files": {
+    "piy-piy.exe": {
+      "sha256": "fd632533f5f8dca93ad4e49ed96370ba291a0d112bed5de64c399db27a6b6ef8",
+      "size": 109641216,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.18/piy-piy.exe-0.1.18-x64.zip",
+        "sha256": "aead830178aad52ae58288d9a0a0daba82e146e617b56f33352d6b902abfad5d",
+        "size": 38196068
+      }
+    },
+    "piy-piy.pck": {
+      "sha256": "480554d9e7d242509b92479a90759973ad5186a15c442cff2e25b73d5db2247b",
+      "size": 3437588,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.18/piy-piy.pck-0.1.18-x64.zip",
+        "sha256": "695895485ea271ce45ab412e80d0d2f41aa98a5bcf6c7e60b927bf7988880c30",
+        "size": 3367230
+      }
+    }
+  },
+  "installer": {
+    "sha256": "a020542249e4722eeed5cdff676d0cd6a5e556f1be2224d551220e21ccc942c1",
+    "size": 9219066
+  },
+  "news": [],
+  "article": {
+    "title": "Урон в карточках Зомбипедии",
+    "lead": "Урон виден сразу при открытии карточек отрядов, машин, построек и орудий, которые могут атаковать.",
+    "sections": [
+      {
+        "heading": "Выстрелы и таран",
+        "text": "У снайпера указано 42 урона за попадание, у бойцов — 4 за попадание каждого. В карточке боевой машины виден урон за пулю, за очередь и за таран. Таран также описан у транспорта и разведчика. У ограды указан урон установленной пушки, у башни — урон снайперов внутри."
+      }
+    ]
+  }
+}
