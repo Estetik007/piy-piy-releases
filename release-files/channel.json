@@ -1,0 +1,51 @@
+{
+  "version": "0.1.21",
+  "date": "2026-11-23",
+  "game_version": "0.1.21",
+  "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.21/piy-piy-0.1.21-x64.zip",
+  "sha256": "944c4dd202feb8036d98e2efe9532d1bae2385a1f65ca8d780e1049f4a2cf46b",
+  "size": 41571853,
+  "game_files": {
+    "piy-piy.exe": {
+      "sha256": "fd632533f5f8dca93ad4e49ed96370ba291a0d112bed5de64c399db27a6b6ef8",
+      "size": 109641216,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.21/piy-piy.exe-0.1.21-x64.zip",
+        "sha256": "c974c39f0d9debd3d25a08abc8eb055b240ce9e8828ec20aedc618bdc395883b",
+        "size": 38196068
+      }
+    },
+    "piy-piy.pck": {
+      "sha256": "12341dff63b0ceeb99d47e4f75ede1cb1aac114c215f7836adc0f468bd269dd6",
+      "size": 3446940,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.21/piy-piy.pck-0.1.21-x64.zip",
+        "sha256": "1bf3a2409e7c6be1c1219fff0172f6e18e8481379ef0da5d12fbcdc7445ae18f",
+        "size": 3375807
+      }
+    }
+  },
+  "installer": {
+    "sha256": "f340ab5cba0a3f5f60b8e9153c1ca4bf1ed3661ab814bff3670fd8b6489ac644",
+    "size": 9554994
+  },
+  "news": [],
+  "article": {
+    "title": "Настройки звука и экрана",
+    "lead": "В главном меню игры и в меню паузы появилась кнопка «Настройки». Выбранные параметры сохраняются между запусками.",
+    "cover": {
+      "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.21/news-1.png",
+      "caption": "Настройки общей громкости, разрешения окна и режима экрана в главном меню."
+    },
+    "sections": [
+      {
+        "heading": "Громкость",
+        "text": "Ползунок регулирует общую громкость от 0 до 100%. Переключатель «Выключить звук» позволяет заглушить игру и затем вернуться к прежней громкости."
+      },
+      {
+        "heading": "Экран",
+        "text": "В оконном режиме можно выбрать разрешение. Режим «На весь экран» занимает весь монитор, а при возврате в окно восстанавливается его выбранный размер. Если открыть настройки на паузе, кнопка «Назад» возвращает в меню паузы."
+      }
+    ]
+  }
+}
