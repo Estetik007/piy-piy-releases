@@ -1,0 +1,43 @@
+{
+  "version": "0.1.28",
+  "date": "2026-11-25",
+  "game_version": "0.1.28",
+  "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.28/piy-piy-0.1.28-x64.zip",
+  "sha256": "a0223455dcbb93c09ab2cd6f2172e79f306676183ba542bfa42f640acab94a11",
+  "size": 41617306,
+  "game_files": {
+    "piy-piy.exe": {
+      "sha256": "fd632533f5f8dca93ad4e49ed96370ba291a0d112bed5de64c399db27a6b6ef8",
+      "size": 109641216,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.28/piy-piy.exe-0.1.28-x64.zip",
+        "sha256": "ff321aadd1a579e94659f1fd4bbd097287aed68d2382ac7fc279f9dfe80906be",
+        "size": 38196068
+      }
+    },
+    "piy-piy.pck": {
+      "sha256": "044149700248dbcb5763f527eb050429cfdb6e39ef928060683bc648429380b1",
+      "size": 3493136,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.28/piy-piy.pck-0.1.28-x64.zip",
+        "sha256": "522263c45dc0f753ad068fb60e98fdcf031012f32f3194b049dce4b6dc3942aa",
+        "size": 3421260
+      }
+    }
+  },
+  "installer": {
+    "sha256": "95792d1fb0b0ddf1ae71a9e7c8af3f3655211312754f8f0afb1a490b7147915a",
+    "size": 11092804
+  },
+  "news": [],
+  "article": {
+    "title": "Счётчик FPS в игре",
+    "lead": "В настройках появился переключатель «Показывать FPS». Красный счётчик показывает частоту кадров над кнопкой «Пауза».",
+    "sections": [
+      {
+        "heading": "Как включить счётчик",
+        "text": "Открой «Настройки» из главного меню или меню паузы и включи «Показывать FPS». По умолчанию счётчик скрыт. Изменение применяется сразу, а выбранное состояние сохраняется после перезапуска."
+      }
+    ]
+  }
+}
