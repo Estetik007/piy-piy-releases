@@ -1,0 +1,51 @@
+{
+  "version": "0.1.24",
+  "date": "2026-11-24",
+  "game_version": "0.1.24",
+  "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.24/piy-piy-0.1.24-x64.zip",
+  "sha256": "e8d3962b7546b607ae4c1108db3707a700aa5d2f1f3c31ceeb7cb7ca57292540",
+  "size": 41591273,
+  "game_files": {
+    "piy-piy.exe": {
+      "sha256": "fd632533f5f8dca93ad4e49ed96370ba291a0d112bed5de64c399db27a6b6ef8",
+      "size": 109641216,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.24/piy-piy.exe-0.1.24-x64.zip",
+        "sha256": "adf9f6bbe9a752c1c9e2a590ce1baf2f64b67a7cb6b04c99f334cf588cbd92f1",
+        "size": 38196068
+      }
+    },
+    "piy-piy.pck": {
+      "sha256": "2f4bd2513b42a72816a415a4054d82ef3abfc454619efd433f31edc47b771a79",
+      "size": 3466948,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.24/piy-piy.pck-0.1.24-x64.zip",
+        "sha256": "ba79a0ff542c95f0d8c867ccca5a07664aefa4cbe46fb75f4ac16a01a7d25021",
+        "size": 3395227
+      }
+    }
+  },
+  "installer": {
+    "sha256": "242376eea24c5c38a525d1fe6f0505ad79d9f78563a9fbdd0dcfbd18d8328dac",
+    "size": 10305872
+  },
+  "news": [],
+  "article": {
+    "title": "Мини-карта, радиус атаки и узкие проходы",
+    "lead": "Мини-карта помогает ориентироваться на поле, выбранные орудия показывают дальность, а пехота проходит через проём шириной в одну клетку.",
+    "cover": {
+      "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.24/news-1.png",
+      "caption": "Мини-карта, радиус атаки отряда и обводка добытчика в игре."
+    },
+    "sections": [
+      {
+        "heading": "Мини-карта и выделение",
+        "text": "Мини-карта слева вверху показывает открытую местность, обнаруженные точки ресурсов и положение камеры. Нажатие переносит камеру. При выборе вооружённого отряда, машины или пушки появляется круг её дальности атаки. Добытчики подсвечиваются при наведении и получают обводку при наведении или выборе. Вернуться в главное меню с сохранением можно через паузу."
+      },
+      {
+        "heading": "Проход в одну клетку",
+        "text": "У пехоты свой маршрут. У узкого проёма отряд перестраивается в колонну, проходит по одному и собирает строй по другую сторону, когда хватает места."
+      }
+    ]
+  }
+}
