@@ -1,0 +1,43 @@
+{
+  "version": "0.1.29",
+  "date": "2026-11-25",
+  "game_version": "0.1.29",
+  "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.29/piy-piy-0.1.29-x64.zip",
+  "sha256": "e95e0e2769da7fed00b6e1e1068fe7cdf7f748476575c761a5cb9893b151f9d9",
+  "size": 41617323,
+  "game_files": {
+    "piy-piy.exe": {
+      "sha256": "fd632533f5f8dca93ad4e49ed96370ba291a0d112bed5de64c399db27a6b6ef8",
+      "size": 109641216,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.29/piy-piy.exe-0.1.29-x64.zip",
+        "sha256": "b3298013ab876c6c3074f1b48d9ff4135843bd0302527b563504669b2a3a973f",
+        "size": 38196068
+      }
+    },
+    "piy-piy.pck": {
+      "sha256": "6cd723271a5539912dc534010373491fe0869356257a7c4409a4072a05fedd7a",
+      "size": 3493184,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.29/piy-piy.pck-0.1.29-x64.zip",
+        "sha256": "fc418c02ebff944310de74f21f17af54e7fe7b42d22f3f4f1a32839e3a9836b6",
+        "size": 3421277
+      }
+    }
+  },
+  "installer": {
+    "sha256": "0c855fe25bd4114c1555ac51170ce7f121f3e06dcaa8e9bfef93bcca657f2e37",
+    "size": 11094500
+  },
+  "news": [],
+  "article": {
+    "title": "Частота кадров без VSync",
+    "lead": "Игра запускается с выключенной вертикальной синхронизацией. Частота кадров может превышать частоту обновления монитора.",
+    "sections": [
+      {
+        "heading": "Проверка частоты кадров",
+        "text": "Включи «Показывать FPS» в настройках игры и посмотри число над кнопкой «Пауза». FPS зависит от нагрузки на компьютер и настроек видеодрайвера."
+      }
+    ]
+  }
+}
