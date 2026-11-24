@@ -1,0 +1,51 @@
+{
+  "version": "0.1.23",
+  "date": "2026-11-24",
+  "game_version": "0.1.23",
+  "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.23/piy-piy-0.1.23-x64.zip",
+  "sha256": "6fa7fcb36eb1cb054e8f4d36e86b86d069b6da849c01a04a343305ac37ec2906",
+  "size": 41581808,
+  "game_files": {
+    "piy-piy.exe": {
+      "sha256": "fd632533f5f8dca93ad4e49ed96370ba291a0d112bed5de64c399db27a6b6ef8",
+      "size": 109641216,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.23/piy-piy.exe-0.1.23-x64.zip",
+        "sha256": "0879d90b9d993db19241a0096130acabe95b8062e9b96f263c5feaa3512c35bf",
+        "size": 38196068
+      }
+    },
+    "piy-piy.pck": {
+      "sha256": "9d3949e7caf1bbbcf9ba3ca8aaf959ef6ca7f4d71e2dd8af16277e89d787667d",
+      "size": 3456188,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.23/piy-piy.pck-0.1.23-x64.zip",
+        "sha256": "6b979a78b83f0866fc6e78a03c686df64de0503eb3fb0d018d12f9b573bc90da",
+        "size": 3385762
+      }
+    }
+  },
+  "installer": {
+    "sha256": "66ba5b0f2c57caf7b8f73e2c10e474d525db638a5f04080ab89caa679c4cd4dd",
+    "size": 9785065
+  },
+  "news": [],
+  "article": {
+    "title": "Контроль точек и карточки производства",
+    "lead": "Рабочие и бойцы могут занимать ресурсные точки с первого уровня базы. В меню производства теперь видно, что умеет каждый отряд, машина и орудие.",
+    "cover": {
+      "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.23/news-1.png",
+      "caption": "Карточки бойцов, рабочих и снайпера в меню казарм."
+    },
+    "sections": [
+      {
+        "heading": "Занять точку",
+        "text": "Подведи отряд к краю обычной ресурсной точки или нажми «Занять точку» в её панели. Если рядом обе команды, точка спорная. Для добычи выбери рабочих или транспорт и построй добытчик. Готовый добытчик удерживает точку и после ухода отряда."
+      },
+      {
+        "heading": "Что видно перед заказом",
+        "text": "В казармах, на автозаводе и на заводе орудий карточки показывают описание, запас здоровья или прочность, скорость движения, интервал атаки и урон. Например, у бойцов видно 150 ОЗ на весь отряд и 4 урона за попадание одного бойца."
+      }
+    ]
+  }
+}
