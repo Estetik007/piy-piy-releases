@@ -1,0 +1,51 @@
+{
+  "version": "0.1.31",
+  "date": "2026-11-25",
+  "game_version": "0.1.31",
+  "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.31/piy-piy-0.1.31-x64.zip",
+  "sha256": "8c8478506e0b5635c1eb56957846a1ac4105e782b6787f8749dd5b073fa0b25e",
+  "size": 41653687,
+  "game_files": {
+    "piy-piy.exe": {
+      "sha256": "fd632533f5f8dca93ad4e49ed96370ba291a0d112bed5de64c399db27a6b6ef8",
+      "size": 109641216,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.31/piy-piy.exe-0.1.31-x64.zip",
+        "sha256": "891f92dcb797e774fec9aea0d9cf8335d59c48d909e59b5c71b0846fa16a3238",
+        "size": 38196068
+      }
+    },
+    "piy-piy.pck": {
+      "sha256": "f9fc7da5813d2be0e1529860e927a025bb0764a7e2a1ebf3262d7896e947ccea",
+      "size": 3530624,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.31/piy-piy.pck-0.1.31-x64.zip",
+        "sha256": "5380db570d93acffc01527d66b8d9f1a9f011f1563dd3f9c967d9b9e7d6c5c33",
+        "size": 3457641
+      }
+    }
+  },
+  "news": [],
+  "article": {
+    "title": "Новые значки и туман войны",
+    "lead": "У бойцов, инженеров, снайпера и каждого типа техники теперь свои значки. Карта показывает, где вы уже побывали и что отряды видят сейчас.",
+    "cover": {
+      "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.31/news-1.png",
+      "caption": "Полная карта после разведки. Чёрным показана неисследованная местность."
+    },
+    "sections": [
+      {
+        "heading": "Перерисованные обозначения",
+        "text": "Бойцы отмечены каской, инженеры — гаечным ключом, снайпер — прицелом. Разведчик, грузовик и бронемашина получили разные силуэты. Нефть обозначена тёмной каплей со светлым контуром. На полной карте по клавише M все символы подписаны.",
+        "image": {
+          "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.31/news-2.png",
+          "caption": "Увеличенная мини-карта в игровом окне."
+        }
+      },
+      {
+        "heading": "Исследование и текущее поле зрения",
+        "text": "Неисследованная местность остаётся чёрной, пока её не откроют свои отряды или постройки. Найденные ресурсы остаются на карте после ухода разведчиков. Красные черепа показывают зомби в текущем поле зрения. Участки, которые команда видела раньше, показаны приглушёнными."
+      }
+    ]
+  }
+}
