@@ -1,0 +1,59 @@
+{
+  "version": "0.1.36",
+  "date": "2026-11-26",
+  "game_version": "0.1.36",
+  "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.36/piy-piy-0.1.36-x64.zip",
+  "sha256": "a91e369db0c1305e53e5bbd86885e9ab045e989fe16a2f29251025da577c5671",
+  "size": 43235984,
+  "game_files": {
+    "piy-piy.exe": {
+      "sha256": "fd632533f5f8dca93ad4e49ed96370ba291a0d112bed5de64c399db27a6b6ef8",
+      "size": 109641216,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.36/piy-piy.exe-0.1.36-x64.zip",
+        "sha256": "a975895d3fafffe1a4f4b9daf7a1186912263384e63a2ab7f8a051b6f1edfb21",
+        "size": 38196068
+      }
+    },
+    "piy-piy.pck": {
+      "sha256": "9296e3f1c664d6b1a7b2178507ea16e935b28bf5163a3b26b58d9797a635809d",
+      "size": 5147648,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.36/piy-piy.pck-0.1.36-x64.zip",
+        "sha256": "0908fbad2dea1660132ec19e34aaaab2e6fde05946e08bacf159ab361e47309c",
+        "size": 5039938
+      }
+    }
+  },
+  "installer": {
+    "sha256": "54f510e4942dce9954c87228b20f5281de502462026411c5464330cd17e3d9c0",
+    "size": 14751978
+  },
+  "news": [],
+  "article": {
+    "title": "Новый облик базы и бойцов",
+    "lead": "У главной базы появились новые материалы и детали, а отряд «Бойцы» получил обновлённые модели и анимации.",
+    "sections": [
+      {
+        "heading": "Главная база",
+        "text": "Приблизь камеру над базой. На стенах видны швы бетонных панелей, у входа есть ступени и металлическая рама. На крыше обновились вентиляция, вышка связи, тарелка и кабель. Модель занимает прежние 6 × 6 клеток.",
+        "image": {
+          "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.36/news-1.png",
+          "caption": "Новая модель базы с входом и оборудованием на крыше."
+        }
+      },
+      {
+        "heading": "Отряд «Бойцы»",
+        "text": "У бойцов появились новые каски, разгрузки и оружие. При движении темп шагов следует за скоростью бойца. Перед выстрелом боец целится, а отдача начинается в момент выстрела. Вспышка появляется у дула оружия.",
+        "image": {
+          "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.36/news-2.png",
+          "caption": "Три бойца в обновлённом снаряжении."
+        }
+      },
+      {
+        "heading": "Карточки и сохранения",
+        "text": "В игровых карточках и Зомбипедии обновлены изображения базы и бойцов. Загрузи существующее сохранение, чтобы увидеть новые модели у уже построенной базы и выпущенных отрядов."
+      }
+    ]
+  }
+}
