@@ -1,0 +1,47 @@
+{
+  "version": "0.1.33",
+  "date": "2026-11-25",
+  "game_version": "0.1.33",
+  "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.33/piy-piy-0.1.33-x64.zip",
+  "sha256": "02e82bf413fe578edf65eafcabde181512c0f5fbec476cef98053f0611311307",
+  "size": 41781664,
+  "game_files": {
+    "piy-piy.exe": {
+      "sha256": "fd632533f5f8dca93ad4e49ed96370ba291a0d112bed5de64c399db27a6b6ef8",
+      "size": 109641216,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.33/piy-piy.exe-0.1.33-x64.zip",
+        "sha256": "ffad20f510df22a11828349e7f1e588954a0fd6694ba40a3492bc9b27faf69cd",
+        "size": 38196068
+      }
+    },
+    "piy-piy.pck": {
+      "sha256": "0201d622c0652bbb2ca465b5e46fe69dc2e02b04d38f4172851c4e7bdb3963fb",
+      "size": 3659904,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.33/piy-piy.pck-0.1.33-x64.zip",
+        "sha256": "06e4b852d710afc842b7b29a69374a58753a7a6f5b137c80ee628833a9d1ea08",
+        "size": 3585618
+      }
+    }
+  },
+  "installer": {
+    "sha256": "4dbc9956b9ecf3dd9273c18a921c853ab3b790a937d901764bc70fef47975e0f",
+    "size": 14717808
+  },
+  "news": [],
+  "article": {
+    "title": "Проволока ставится на землю",
+    "lead": "Колючую проволоку и её ворота теперь можно строить прямо на земле.",
+    "sections": [
+      {
+        "heading": "Размещение вдоль края базы",
+        "text": "Протяни линию по земле рядом с краем пола. Секции встанут на свободные клетки, а плиты будут пропущены. Для ворот нужны три клетки без плит. На такой площадке ворота по-прежнему можно поставить поверх секций проволоки."
+      },
+      {
+        "heading": "Загрузка старых сохранений",
+        "text": "Уже построенная проволока загружается на прежнем месте. При переносе выбери участок земли. В карточках Зомбипедии теперь указано, на какой поверхности можно строить проволоку и ворота."
+      }
+    ]
+  }
+}
