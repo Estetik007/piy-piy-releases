@@ -1,0 +1,47 @@
+{
+  "version": "0.1.35",
+  "date": "2026-11-26",
+  "game_version": "0.1.34",
+  "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.34/piy-piy-0.1.34-x64.zip",
+  "sha256": "7923fafcff6702290f72a76c10f306fca0ec42f05838fddfea2873f51f707c2f",
+  "size": 41785346,
+  "game_files": {
+    "piy-piy.exe": {
+      "sha256": "fd632533f5f8dca93ad4e49ed96370ba291a0d112bed5de64c399db27a6b6ef8",
+      "size": 109641216,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.34/piy-piy.exe-0.1.34-x64.zip",
+        "sha256": "619d152d2a1f2a3a975a45d36df855078a9f979ae4cf710dcf9c377ec466c86e",
+        "size": 38196068
+      }
+    },
+    "piy-piy.pck": {
+      "sha256": "3c2ec258b13bd9f7881041994db3e1360a53b4865a06ddf4076da043671b481d",
+      "size": 3663552,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.34/piy-piy.pck-0.1.34-x64.zip",
+        "sha256": "abe30deea2a2159ba604f99abe8edadc3cb74379ef1d53665e46de339d5c32cf",
+        "size": 3589300
+      }
+    }
+  },
+  "installer": {
+    "sha256": "3a1c5a50a71d388f10a235c91abd9022e4bf2515c732f270d6b2a1af4e261892",
+    "size": 14717851
+  },
+  "news": [],
+  "article": {
+    "title": "Отдельное обновление лаунчера",
+    "lead": "Лаунчер можно обновить до 0.1.35, даже если игра 0.1.34 уже установлена.",
+    "sections": [
+      {
+        "heading": "Как обновиться",
+        "text": "Нажми «Проверить обновления», затем «Обновить лаунчер». Скачается установщик лаунчера, а после установки окно откроется снова. В верхней части окна появится «Лаунчер 0.1.35». Если игра 0.1.34 уже установлена, её файлы скачивать повторно не нужно."
+      },
+      {
+        "heading": "Статус после проверки",
+        "text": "Когда оба обновления установлены, сообщение под обложкой показывает номера актуальных версий игры и лаунчера."
+      }
+    ]
+  }
+}
