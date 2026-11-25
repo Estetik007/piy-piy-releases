@@ -1,0 +1,51 @@
+{
+  "version": "0.1.30",
+  "date": "2026-11-25",
+  "game_version": "0.1.30",
+  "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.30/piy-piy-0.1.30-x64.zip",
+  "sha256": "bfc54bee41d0b2a3d15a240075221772562af06915c00b68f716123def0c77e4",
+  "size": 41626473,
+  "game_files": {
+    "piy-piy.exe": {
+      "sha256": "fd632533f5f8dca93ad4e49ed96370ba291a0d112bed5de64c399db27a6b6ef8",
+      "size": 109641216,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.30/piy-piy.exe-0.1.30-x64.zip",
+        "sha256": "4816dce6f796c69e8bf18fd3a465222b8f6b330ac72ad1b0397cabab465ad7ec",
+        "size": 38196068
+      }
+    },
+    "piy-piy.pck": {
+      "sha256": "8a0f456648ae8ce2c79273c413abcf2c851a7a10863241e994dbab8c4a77fdea",
+      "size": 3502696,
+      "archive": {
+        "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.30/piy-piy.pck-0.1.30-x64.zip",
+        "sha256": "a59aa62c9be388ef4d640042376df6ce27e41c6899cab3816b91251e4fbe3f80",
+        "size": 3430427
+      }
+    }
+  },
+  "news": [],
+  "article": {
+    "title": "Камера на паузе и значки на карте",
+    "lead": "Осматривайте поле боя на паузе и различайте отряды, зомби и ресурсы по новым значкам.",
+    "cover": {
+      "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.30/news-1.png",
+      "caption": "Полная карта с обозначениями. Открывается клавишей M."
+    },
+    "sections": [
+      {
+        "heading": "Осмотр поля боя на паузе",
+        "text": "Во время паузы WASD и стрелки перемещают камеру, Q и E поворачивают её, а колёсико меняет масштаб. Меню паузы теперь находится в правом верхнем углу. Бой, перемещение отрядов и строительство возобновляются после выхода из паузы. Клавиша M открывает полную карту, а Esc закрывает карту и возвращает к паузе."
+      },
+      {
+        "heading": "Значки на мини-карте",
+        "text": "Красные черепа обозначают видимых зомби. У отрядов, машин, базы, построек и пушек свои силуэты. Нефть отмечена каплей, металл слитком, сера кристаллом. Зелёное кольцо показывает работающую добычу, мигающее жёлтое кольцо — простой. Все обозначения подписаны на полной карте.",
+        "image": {
+          "url": "https://github.com/Estetik007/piy-piy-releases/releases/download/v0.1.30/news-2.png",
+          "caption": "Мини-карта с новыми значками в левом верхнем углу игрового экрана."
+        }
+      }
+    ]
+  }
+}
